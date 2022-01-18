@@ -53,13 +53,14 @@
     <!-- Generate architecture specific packages. Values: x86|x64|arm|arm64 -->
     <AppxBundlePlatforms>neutral</AppxBundlePlatforms>
     <!-- App installer file base url -->
-    <AppInstallerUri>https://microsoft.github.io/github-actions-for-desktop-apps-distribution-local</AppInstallerUri>
+    <AppInstallerUri>D:\github-actions-for-desktop-apps\MyWPFApp.Package\AppPackages\</AppInstallerUri>
     <AppxAutoIncrementPackageRevision>False</AppxAutoIncrementPackageRevision>
     <EntryPointProjectUniqueName>..\MyWPFApp\MyWPFApp.csproj</EntryPointProjectUniqueName>
     <AppInstallerUpdateFrequency>0</AppInstallerUpdateFrequency>
     <AppInstallerCheckForUpdateFrequency>OnApplicationRun</AppInstallerCheckForUpdateFrequency>
     <GenerateTestArtifacts>True</GenerateTestArtifacts>
     <AppxPackageSigningTimestampDigestAlgorithm>SHA256</AppxPackageSigningTimestampDigestAlgorithm>
+    <PackageCertificateKeyFile>MyWPFApp.Package_TemporaryKey.pfx</PackageCertificateKeyFile>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <AppxBundle>Always</AppxBundle>
